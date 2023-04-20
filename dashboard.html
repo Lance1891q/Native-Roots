@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>   
+    <link rel="stylesheet" href="./css/dash.css">
+    <link rel="preconnect" href="https://googleapis.com/css2?famil=Poppins:wght@100;200;300;400;
+    500;600;700;&displayl=swap rel='stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <button id="nav_toggle">+</button>
+    </nav>
+    <section class="container">
+        
+        <section class="nav-fixed">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="#"><span>Native Roots</span></a>
+                </div>
+                <div class="user">
+                    <img src="./img/avatar3.jpg" alt="">
+                    <p class="p-small">Welcome back</p>
+                    <p class="name">Jordan Harllow</p>
+                </div>
+                <div class="budget">
+                    <p class="money">$34,321</p>
+                    <p class="p-small">Monthly budget</p>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li class="active"><i class="uil uil-chart-pie-alt"></i>Dashboard</li>
+                        <li><i class="uil uil-users-alt"></i>Customers</li>
+                        <li><i class="uil uil-location-point"></i>Tours</li>
+                        <li><i class="uil uil-wallet"></i>Wallet</li>
+                    </ul>
+                </div>
+                <div class="exit">
+                    <i class="uil uil-sign-out-alt"></i>
+                    <p>Sign-out</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-con">
+            <div class="main-con-cover"> </div>
+            <div class="main-text">
+                <span>Dashboard</span>
+            </div>
+
+            <div class="main-pos">  
+                <div class="left">
+                    <div class="availiabilty">
+                        <div class="ava-row">
+                            <p class="p-small">Availiable Balance</p>
+                        <div class="checkbox-wrapper-6">
+                            <p class="p-small">Credit</p>
+                            <input class="tgl tgl-light" id="cb1-6" type="checkbox"/>
+                            <label class="tgl-btn" for="cb1-6">
+                          </div>
+                        </div>
+
+                        <div class="ava-balance">
+                            <span>$12,234</span>
+                        </div>
+
+                        <div class="ava-row2">
+                            <p>4532</p>
+                            <img src="./img/logo1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="payment">
+                        <div class="pay-top">
+                            <p class="p-small">Internet payment limit</p>
+                            <p><span class="active">$ 1,200</span> / 3,000</p>
+                        </div>
+                        <div class="pay-bottom">
+                            <div class="payed"></div>
+                        </div>
+                    </div>
+
+                    <div class="expernditure">
+                        <div class="income">
+                            <i class="uil uil-arrow-growth"></i>
+                            <div>
+                                <p class="p-small">Income</p>
+                                <p>$5,700</p>
+                            </div>
+                        </div>
+                        <div class="spendings">
+                            <i class="uil uil-chart-down"></i>
+                            <div>
+                                <p class="p-small">Spendings</p>
+                                <p>$2,254</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spend-tract">
+                        <div class="spt-text">
+                            <p>Latest spendings</p>
+                            <p class="p-small">View all</p>
+                        </div>
+
+                        <div class="spt-box">
+                            <div class="tour">
+                                <div class="main-loc">
+                                    <i class="uil uil-location-point"></i>
+                                    <div class="location">
+                                        <p>France</p>
+                                        <p class="p-small">May 23 2022 at 8:20 PM</p>
+                                    </div>
+                                </div>
+                                <div class="loc-price">
+                                    <p>$3,000</p>
+                                </div>
+                            </div>
+
+                            <div class="tour">
+                                <div class="main-loc">
+                                    <i class="uil uil-location-point"></i>
+                                    <div class="location">
+                                        <p>France</p>
+                                        <p class="p-small">May 23 2022 at 8:20 PM</p>
+                                    </div>
+                                </div>
+                                <div class="loc-price">
+                                    <p>$3,000</p>
+                                </div>
+                            </div>
+
+                            <div class="tour">
+                                <div class="main-loc">
+                                    <i class="uil uil-location-point"></i>
+                                    <div class="location">
+                                        <p>France</p>
+                                        <p class="p-small">May 23 2022 at 8:20 PM</p>
+                                    </div>
+                                </div>
+                                <div class="loc-price">
+                                    <p>$3,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="graph"></div>
+
+                    <div class="received-payments">
+                        <p>Money Received From</p>
+
+                        <div class="repay-img">
+                            <img src="./img/avatar1.jpg" alt="">
+                            <img src="./img/avatar2.jpg" alt="">
+                            <img src="./img/avatar6.jpg" alt="">
+                            <img src="./img/avatar4.jpg" alt="">
+                            <img src="./img/avatar5.jpg" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="seche-pay">
+                        <p>Scheduled payments</p>
+                        <div class="seche-box">
+                            <div class="box">
+                                <p>$4,000</p>
+                                <p>Japan</p>
+                            </div>
+
+                            <div class="box">
+                                <p>$7,000</p>
+                                <p>France</p>
+                            </div>
+
+                            <div class="box">
+                                <p>$9,000</p>
+                                <p>New York</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>
+
+<script>
+    const nav_toggle = document.getElementById('nav_toggle')
+    const nav_fixed = document.querySelector('.nav-fixed')
+    const main_con_cover = document.querySelector('.main-con-cover')
+
+    window.onload =()=>{
+        changeNav()
+    }
+    window.onresize =()=>{
+        changeNav()
+    }
+
+
+    const changeNav =()=>{
+        nav_fixed.onmouseenter =()=>{
+            if(window.innerWidth < 1400){
+                addNavFixed()
+            }
+        }
+        nav_toggle.onmouseenter =()=>{
+            if(window.innerWidth < 1400){
+                addNavFixed()
+            }
+        }
+        nav_fixed.onmouseleave =()=>{
+            if(window.innerWidth < 1400){
+                remNavFixed()
+            }
+        }
+
+    }
+
+    const addNavFixed =()=>{
+        window.onclick =()=>{
+            nav_fixed.classList.add('change')
+            nav_fixed.ontransitionend =()=>{
+                nav_fixed.classList.add('change')
+            }
+            main_con_cover.classList.add('change')
+        }
+    }
+    const remNavFixed =()=>{
+        window.onclick =()=>{
+            if(nav_fixed.classList.contains('change')){
+                nav_fixed.classList.add('hide')
+                nav_fixed.ontransitionend =()=>{
+                    nav_fixed.classList.remove('hide')
+                    nav_fixed.classList.remove('change')
+                }
+                main_con_cover.classList.remove('change')
+            }
+         }
+    }
+    
+</script>

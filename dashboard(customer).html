@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/dash(customer).css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+</head>
+<body>
+    <header>
+        <div class="head-main-con">
+            <a href="#" class="logo"><span class="logo">Native Roots</span></a>
+            <ul class="navmenu">
+                <li><a href="#" class="active">DASHBOARD</a></li>
+                <li><a href="#">HISTORY</a></li>
+                <li><a href="#">PAYMENTS</a></li>
+                <li><a href="#">ENTERPRISE</a></li>
+            </ul>
+            
+        </div>
+        
+        <div class="btn-icon">
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+            <div class="btn-icon-con">
+                <i class="uil uil-bell"></i>
+                <i class="uil uil-calender"></i>
+            </div>
+            <div class="account">
+                <p>Albert Flores</p>
+                <img src="./img/avatar3.jpg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section class="row-1">
+        <div class="row_1-box_1">
+            <div class="box-1-top">
+                <p>Cashring</p>
+            </div>
+
+            <div class="box-1-bottom">
+                <p>ALBERT FLORES</p>
+            </div>
+        </div>
+        
+        <div class="row_1-box_2">
+            <div class="balance">
+                <div class="balance-text">
+                    <p>Balance</p>
+                    <p>$230,784.00</p>
+                </div>
+
+                <div class="balance-box">
+                    <div class="b-box">
+                        <i class="uil uil-arrow-up-right"></i>
+                        <p>SEND</p>
+                    </div>
+                    <div class="b-box">
+                        <i class="uil uil-download-alt"></i>
+                        <p>REFILL</p>
+                    </div>
+                    <div class="b-box">
+                        <i class="uil uil-exchange-alt"></i>
+                        <p>TRANSFER</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row_1-box_3">
+            <i class="uil uil-arrow-right"></i>
+        </div>
+        
+        <div class="row_1-box_4">
+            <div class="box-4-con">
+                <span>Your Payment Ring</span>
+                <p>by mastercard</p>
+            </div>
+
+            <div class="box-4-img">
+                <img src="" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="row-2">
+        <div class="row-2-con">
+            <div class="row_2-box">
+                <div class="row_2-box-con">
+                    <p class="number">$20K</p>
+                    <p>This month's <br> expenses</p>
+                </div>
+                <div class="row_2-box-con-2">
+                    <p>+6%</p>
+                </div>
+            </div>
+            <div class="row_2-box">
+                <div class="row_2-box-con">
+                    <p class="number">$50K</p>
+                    <p>last month's <br> expenses</p>
+                </div>
+                <div class="row_2-box-con-2">
+                    <p>+12%</p>
+                </div>
+            </div>
+            <div class="row_2-box">
+            </div>
+        </div>
+    </section>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="./img/Amsterdam.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/London.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/Los Angeles.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/Bangkok.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/Barcelona.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/New York.jpeg" alt="">
+            </div>
+            ...
+            </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <footer class="end-text">
+        <div class="footer">
+            <p>All copyrights reserved@Native Roots Adventures</p>
+        </div>
+    </footer>
+
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" src="./js/script.js"></script>
+    
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            slidesPerView: 3,
+            spaceBetween: 10,
+            loop: true,
+            keyboard: {
+                enabled: true,
+            },
+            autoplay: {
+                delay: 3000,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                780: {
+                    slidesPerView: 2,
+                },
+                950: {
+                    slidesPerView: 3,
+                },  
+            },
+        });
+
+
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', ()=> {
+            header.classList.toggle('sticky', this.window.scrollY > 0)
+        })
+
+        let menu = document.querySelector('#menu-icon')
+        let navmenu = document.querySelector('.navmenu')
+
+        menu.addEventListener('click', ()=> {
+            navmenu.classList.toggle('open')
+        })
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x')
+        }
+
+    </script>
+
+</body>
+</html>
