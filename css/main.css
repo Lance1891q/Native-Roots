@@ -435,11 +435,35 @@ section {
 
 .test-text {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     gap: 2rem;
+    text-align: center;
 }
 
-.left h4 {
+.swiper {
+    width: 700px;
+    height: 200px;
+}
+
+.swiper-wrapper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.swiper-wrapper .swiper-slide p {
+    width: 80%;
+    text-align: center;
+}
+  
+
+.test-bottom {
+    width: 100%;
+}
+
+.test-top h4 {
     color: #5E6282;
     font-size: 18px;
     text-transform: capitalize;
@@ -448,7 +472,7 @@ section {
     margin-bottom: 15px;
 }
 
-.left h3 {
+.test-top h3 {
     font-size: 50px;
     color: #14183e;
     text-transform: capitalize;
@@ -456,13 +480,13 @@ section {
     font-family: 'Volkhov';
 }
 
-.right img {
+.test-bottom img {
     max-width: 100%;
     width: 70px;
     height: 70px;
 }
 
-.right h5 {
+.test-bottom h5 {
     color: #5E6282;
     font-size: 16px;
     text-transform: capitalize;
@@ -470,7 +494,7 @@ section {
     margin-top: 3px;
 }
 
-.right h6 {
+.test-bottom h6 {
     color: #5E6282;
     font-size: 14px;
     text-transform: capitalize;
@@ -478,7 +502,7 @@ section {
     margin-bottom: 10px;
 }
 
-.right p{
+.test-bottom p{
     color: #5E6282;
     font-size: 14px;
     font-weight: 500;

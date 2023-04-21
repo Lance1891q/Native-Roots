@@ -12,6 +12,10 @@
     500;600;700;&displayl=swap rel='stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <header>
@@ -41,9 +45,9 @@
         <div data-aos="fade-right" class="home-text">
             <h4>Best Destinations In Ghana</h4>
             <h1>Travel, enjoy and live <br> a new and full life</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing<br>
-            elit. Exercitationem enim quidem ex fugiat consectetur?<br>
-            Vero eligendi eius recusandae</p>
+            <p>We organize tours that bring everlasting memories. Your experience<br>
+            in touring with us is worth every penny our clients invest in the<br>
+            hospitality, and adventures of touring with us.</p>
             
             <div class="button">
                 <a href="#" class="btn1">Find out more</a>
@@ -66,25 +70,19 @@
             <div class="row">
                 <i class="uil uil-bus-alt"></i>
                 <h5>Transportation</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci</p>
+                <p>Research transportation options to ensure a memorable experience.</p>
             </div>
 
             <div class="row">
                 <i class="uil uil-restaurant"></i>
                 <h5>Meals</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci</p>
-            </div>
-
-            <div class="row">
-                <i class="uil uil-accessible-icon-alt"></i>
-                <h5>Accomodation</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci</p>
+                <p>Our tour site offers a variety of dining options to suit every taste and dietary need.</p>
             </div>
 
             <div class="row">
                 <i class="uil uil-unlock"></i>
                 <h5>Entrance Fees</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci</p>
+                <p>Plan a budget-friendly trip to explore a city's history and culture.</p>
             </div>
 
             <div class="row">
@@ -282,18 +280,71 @@
 
     <section class="Testimonials" id="testimonials">
         <div class="test-text">
-            <div data-aos="zoom-in-left" class="left">
+            <div data-aos="zoom-in-left" class="test-top">
                 <h4>Testimonials</h4>
                 <h3>What people say <br> about Us.</h3>
             </div>
 
-            <div data-aos="zoom-in-right" class="right">
-                <img src="./img/test-img.png" alt="">
-                <h5>Saidul Islam</h5>
-                <h6>Sylhet, Bangladesh</h6>
-                <p>"On the Windows talking painted pasture yet its <br> express
-                parties use. Sure last upon he same as <br> knew next. Of believed
-                or deverted no."</p>
+            <div data-aos="zoom-in-right" class="test-bottom">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/test-img.png" alt="">
+                            <h5>Saidul Islam</h5>
+                            <p>"On the Windows talking painted pasture yet its  express
+                            parties use. Sure last upon he same as  knew next. Of believed
+                            or deverted no."</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/test-img.png" alt="">
+                            <h5>Lancelot</h5>
+                            <p>"On the Windows talking painted pasture yet its  express
+                            parties use. Sure last upon he same as  knew next. Of believed
+                            or deverted no."</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/test-img.png" alt="">
+                            <h5>Saidul Islam</h5>
+                            <p>"On the Windows talking painted pasture yet its  express
+                            parties use. Sure last upon he same as  knew next. Of believed
+                            or deverted no."</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/test-img.png" alt="">
+                            <h5>Saidul Islam</h5>
+                            <p>"On the Windows talking painted pasture yet its  express
+                            parties use. Sure last upon he same as  knew next. Of believed
+                            or deverted no."</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/test-img.png" alt="">
+                            <h5>Saidul Islam</h5>
+                            <p>"On the Windows talking painted pasture yet its  express
+                            parties use. Sure last upon he same as  knew next. Of believed
+                            or deverted no."</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/test-img.png" alt="">
+                            <h5>Saidul Islam</h5>
+                            <p>"On the Windows talking painted pasture yet its  express
+                            parties use. Sure last upon he same as  knew next. Of believed
+                            or deverted no."</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/test-img.png" alt="">
+                            <h5>Saidul Islam</h5>
+                            <p>"On the Windows talking painted pasture yet its  express
+                            parties use. Sure last upon he same as  knew next. Of believed
+                            or deverted no."</p>
+                        </div>
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    
+                  </div>
             </div>
         </div>
     </section>
@@ -351,11 +402,35 @@
             <p>All copyrights reserved@Native Roots Adventures</p>
         </div>
     </footer>
-
+    
     <script src="./js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" src="./js/script.js"></script>
+        
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+
     </script>
+
 </body>
 </html>

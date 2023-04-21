@@ -59,6 +59,7 @@ img {
     display: inline-block;
     margin-bottom: 2rem;
     font-size: 2rem;
+    color: #fff;
 }
 
 .ach-card:nth-child(2) .ach-icon {
@@ -88,6 +89,10 @@ img {
     line-height: 70px;
     letter-spacing: -0.04em;
     margin-bottom: 18px;
+}
+
+.about-ach-left img {
+    transform: scale(1.4);
 }
 
 /* Team */
