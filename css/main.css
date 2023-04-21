@@ -451,6 +451,9 @@ section {
     justify-content: center;
 }
 
+.swiper-wrapper .swiper-slide img {
+    border-radius: 50%;
+}
 
 .swiper-wrapper .swiper-slide p {
     width: 80%;
