@@ -11,12 +11,20 @@
     margin-top: 10vh;
     width:90%;
     height: 65vh;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.73)), url(../img/sug-1.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.73)), url(../img/Ghana.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.home_2 {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.73)), url(../img/north-page.jpg);
+}
+
+.home_3 {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.73)), url(../img/tamale.jpg);
 }
 
 .home-text h4{
@@ -39,7 +47,7 @@
 }
 
 .home-text p{
-    color: #5E6282;
+    color: #dadada;
     font-size: 16px;
     font-weight: 500;
     line-height: 30px;
@@ -52,110 +60,9 @@
     height: auto;
 }
 
-/* Booking */
-
-.dest-search {
-    position: absolute;
-    bottom: -20%;
-    position: revert;
-    padding: 0 0 0 5rem;
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    border-radius: 0.8rem;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-}
-
-#dropdown-container:nth-child(2),#dropdown-container:nth-child(3),#dropdown-container:nth-child(4) {
-    padding-left: 2rem;
-}
-
-#dropdown-container {
-    margin: 20px 0 20px 0;
-    /* border: 1px solid red; */
-    width: 25%;
-    padding: 5px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
-#dropdown-container p{
-    color: #5E6282;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 30px;
-}
-
-.drop-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #e9e9ed;
-    color: #212832;
-    border: none;
-    cursor: pointer;
-}
-
-input {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #e9e9ed;
-    color: #212832;
-    border: none;
-    cursor: pointer;
-}
-
-.drop-btn:focus {
-    border: 2px solid #000;
-    outline: none;
-}
-
-.btn-con {
-    display: flex;
-    width: 20%;
-    border-top-right-radius: 2rem;
-    border-top-left-radius: 2rem;
-    height: inherit;
-    margin-left: 20px;
-}
-
-.btn {
-    height: 100%;
-    width: 100%;
-    font-size: 25px;
-    font-weight: 500;
-    font-style: normal;
-    color: #000;
-    text-transform: capitalize;
-    padding: 10px 20px;
-    background-color: #fff1da;
-    border-top-right-radius: 0.8rem;
-    border-bottom-right-radius: 0.8rem;
-    transition: all .42s;
-}
-
-/* Suggested Locations */
-
-.dest-text h2 {
-    font-size: 50px;
-    color: #14183e;
-    text-transform: capitalize;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    text-align: left;
-    margin-bottom: 50px;
-}
-
-.Destination {
-    margin-top: 10rem;
-}
-
 .home-text i{
     color: white;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .home{
@@ -176,6 +83,36 @@ input {
     height: 100%;
     background-position: center;
     background-size: cover;
+}
+
+/* Suggested Locations */
+
+.Destination {
+    margin-top: 7rem;
+}
+
+.dest-doc h2 {
+    font-size: 50px;
+    color: #14183e;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.main-doc {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1rem;
+}
+
+.main-doc div {
+    border: 2px solid #14183e;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 20px;
+    color: #616267;
 }
 
 @media all and (max-width:1200px){

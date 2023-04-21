@@ -73,6 +73,8 @@ img {
     font-size: 14px;
     font-weight: 500;
     line-height: 25px;
+    width: 50%;
+    text-align: center;
 }
 
 .contact-details li {
@@ -147,7 +149,6 @@ img {
 
 }
 
-
 @media (max-width: 360px) {
 
     .contact-details li:nth-child(2) {
@@ -174,4 +175,10 @@ img {
         width: 100%;
     }
 
+}
+
+@media (max-width: 685px) {
+    .contact-aside p {
+        width: 100%;
+    }
 }

@@ -10,6 +10,10 @@
     text-decoration: none;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -71,57 +75,6 @@ header span {
 
 .navmenu li a:hover::after {
     width: 100%;
-}
-
-.btn-icon {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-}
-
-.nav-btn {
-    position: relative;
-    font-size: 17px;
-    color: #212832;
-    font-weight: 500;
-    border: 2px solid #212832;
-    padding: 5px 15px;
-    border-radius: 5px;
-    margin-right: 20px;
-    transition: all .42s;
-}
-
-.account.ac-open {
-    display: block;
-}
-
-.account {
-    position: absolute;
-    display: none;
-    top: 70%;
-    transition: all .42s;
-}
-
-.account ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.account li {
-    padding: 10px 23px;
-    background-color: #5555;
-    color: #fff;
-}
-
-.account li:nth-child(2) {
-    margin-top: 0.3rem;
-}
-
-.nav-btn:hover {
-    background-color: #212832;
-    color: #fff;
 }
 
 #menu-icon {
