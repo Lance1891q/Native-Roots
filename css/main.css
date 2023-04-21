@@ -240,10 +240,11 @@ section {
     transition: all .42s;
 }
 
-.row img {
-    width: 75px;
-    height: auto;
+.row i {
     margin-bottom: 20px;
+    color: #14183e;
+    font-size: 75px;
+    height: auto;
 }
 
 .row h5 {
