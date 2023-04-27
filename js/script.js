@@ -9,24 +9,28 @@ let navmenu = document.querySelector('.navmenu')
 
 menu.addEventListener('click', ()=> {
     navmenu.classList.toggle('open')
+    if (menu.classList.contains('bx-menu')) {
+        console.log('hello');
+        menu.classList.replace('bx-menu', 'bx-x');
+    } else {
+        menu.classList.replace('bx-x', 'bx-menu');
+    }
 })
 
-menu.onclick = () => {
-    menu.className('bx ')
-}
 
-let signUp = document.querySelector('.nav-btn')
-let account = document.querySelector('.account')
-let btn_icon = document.querySelector('.btn-icon')
+const drop = document.querySelectorAll('.doc-box');
 
-const ifPresent = ()=> {
 
-}
+drop.forEach(element => {
+    element.addEventListener('click', () => {
+        element.classList.toggle('open');
 
-btn_icon.onmouseover = ()=> {
-    account.classList.add('ac-open')       
-}
+        const icon_1 = element.querySelector('.control');
 
-btn_icon.onmouseleave = ()=> {
-    account.classList.remove('ac-open')
-}
+        if (icon_1.classList.contains('uil-plus')) {
+            icon_1.classList.replace('uil-plus', 'uil-minus');
+        } else {
+            icon_1.classList.replace('uil-minus', 'uil-plus');
+        }
+    })
+});
