@@ -22,14 +22,18 @@ header {
     z-index: 10;
     display: flex;
     align-items: center;
-    height: 10vh;
+    height: 12vh;
     justify-content: space-between;
     padding: 22px 12%;
 }
 
 .logo {
-    text-decoration: none;
-    color: #212832;
+    height: 100px;
+}
+
+.logo img {
+    width: auto;
+    height: 100%;
 }
 
 header span {
@@ -470,11 +474,13 @@ section {
     align-items: center;
 }
 
-.contact-info span {
-    font-size: 40px;
-    max-width: 100%;
-    width: 120px;
-    height: auto;
+.logo_2 {
+    height: 100px;
+}
+
+.logo_2 img {
+    width: auto;
+    height: 150px;
 }
 
 .first-info h6 {
@@ -806,16 +812,6 @@ section {
 
     .home-text p{
         line-height: 20px;
-    }
-
-    header {
-        display: flex;
-        flex-direction: column;
-        height: 12vh;
-    }
-
-    header .logo {
-        font-size: 28px;
     }
 
     .nav-btn {
